@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: TPO4_1
+  h2:
+    console:
+      path: /my-database4
+  datasource:
+    url: jdbc:h2:mem:blog
+    username: s27857
+    password: password
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+    defer-datasource-initialization: true
+  sql:
+    init:
+      data-locations: classpath:data-sql/Role.sql, classpath:data-sql/User.sql, classpath:data-sql/Blog.sql, classpath:data-sql/Article.sql, classpath:data-sql/Role_Users.sql
